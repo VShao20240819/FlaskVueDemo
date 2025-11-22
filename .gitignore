@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Vue 中的内容
+frontend/node_modules/
+# 根据服务器不同的不同配置内容
+config/ssh_prod.ini
+
+# 项目临时文件夹
+temp/
+logs/
