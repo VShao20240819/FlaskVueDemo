@@ -1,5 +1,7 @@
 如何使用：
+
 	0- 你需要有python环境， 我的环境为python3.10。尽量安装3.10版本
+	
 		# 更新软件包列表
 		sudo apt update
 		# 安装Python 3.10
