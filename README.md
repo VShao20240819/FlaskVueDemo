@@ -49,4 +49,15 @@
 		"""
 		note: 如果出现端口占用的情况，可以修改Flask中run.py的端口
 		"""
+
+	5- 运行完成后，重新绑定自己的git
+		gitremote remove origin
+		git remote -v 
+		# 此时无任何打印为正常
+		# 在自己的git仓库中创建一个全新的项目FlaskVueDemo
+		git remote add origin https://github.com/yourname/FlaskVueDemo.git
+		
+
+
+
 		
