@@ -39,3 +39,14 @@
 		npm init -y
 		npm install vue@3
 		npm install vite @vitejs/plugin-vue --save-dev
+
+		# 配置好vue
+		npm run build
+
+	4- 现在可以正常访问Flask接口了
+		python run.py
+		# mac python3 run.py
+		"""
+		note: 如果出现端口占用的情况，可以修改Flask中run.py的端口
+		"""
+		
