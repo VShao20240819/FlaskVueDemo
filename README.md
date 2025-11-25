@@ -32,7 +32,14 @@
 	3- 安装node环境
 	
 		https://nodejs.org/zh-cn
-		检查是否
+		# linux使用 apt install nodejs安装：
+			输入Y
+			跳出界面： tab 后回车
+		# linux使用 apt install npm：
+			输入Y
+			跳出界面： tab 后回车
+			
+		检查是否安装成功
 		node -v
 		npm -v
 		cd frontend
@@ -56,7 +63,14 @@
 		# 此时无任何打印为正常
 		# 在自己的git仓库中创建一个全新的项目FlaskVueDemo
 		git remote add origin https://github.com/yourname/FlaskVueDemo.git
-		
+
+		git branch -M main  # 或者 master，根据你的仓库默认分支
+		git push -u origin main
+
+		# 第一次提交git
+		git add .
+		git commit -m "first push"
+		git push
 
 
 
