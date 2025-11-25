@@ -10,7 +10,21 @@
 		python3.10 --version
 		# 验证pip安装
 		python3.10 -m pip --version
-	
+
+		# 1. 下载 Node 22 LTS
+		cd /usr/local
+		wget https://nodejs.org/dist/v22.20.0/node-v22.20.0-linux-x64.tar.xz
+		
+		# 2. 解压
+		tar -xJf node-v22.20.0-linux-x64.tar.xz
+		
+		# 3. 添加 PATH（临时生效，或者加到 ~/.bashrc）
+		export PATH=/usr/local/node-v22.20.0-linux-x64/bin:$PATH
+		
+		# 4. 验证版本【版本必须要node：v22 、 npm：v10 以上】
+		node -v   # 应该显示 v22.20.0
+		npm -v    # 应该显示 10.x
+		
 	1- 下拉代码
 	
 		git clone https://github.com/VShao20240819/FlaskVueDemo.git
@@ -29,7 +43,7 @@
 		venv\Scripts\activate
 		pip install -r requirements.txt
 	
-	3- 安装node环境
+	3- 安装node环境（如果在第0步已经使用压缩包安装可以跳过此安装步骤）
 	
 		https://nodejs.org/zh-cn
 		# linux使用 apt install nodejs安装：
@@ -42,22 +56,23 @@
 		检查是否安装成功
 		node -v
 		npm -v
-		cd frontend
+
+	4- 同步vue项目
+				cd frontend
 		npm init -y
 		npm install vue@3
 		npm install vite @vitejs/plugin-vue --save-dev
-
 		# 配置好vue
 		npm run build
 
-	4- 现在可以正常访问Flask接口了
+	5- 现在可以正常访问Flask接口了
 		python run.py
 		# mac python3 run.py
 		"""
 		note: 如果出现端口占用的情况，可以修改Flask中run.py的端口
 		"""
 
-	5- 运行完成后，重新绑定自己的git
+	6- 运行完成后，重新绑定自己的git
 		gitremote remove origin
 		git remote -v 
 		# 此时无任何打印为正常
